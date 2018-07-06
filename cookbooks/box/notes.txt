@@ -1,0 +1,3 @@
+
+ gdb-doc clang libtool-doc libmyodbc odbc-postgresql tdsodbc unixodbc-bin
+         autoconf automaken gfortran | fortran95-compiler gcj-jdk

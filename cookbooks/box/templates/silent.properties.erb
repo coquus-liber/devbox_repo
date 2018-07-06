@@ -1,0 +1,35 @@
+#Silent properties for ColdFusion 11
+INSTALLER_UI=SILENT
+SILENT_RUNTIME_USER=<%= @user %>
+RUNTIME_USER=<%= @user %>
+SILENT_LICENSE_MODE=<%= @mode %>
+SILENT_SERIAL_NUMBER=<%= @serial_number %>
+SILENT_PREV_SERIAL_NUMBER=<%= @prev_serial_number %>
+SILENT_INSTALLER_TYPE=<%= @type %>
+SILENT_INSTALL_ODBC=<%= @install_odbc %>
+SILENT_INSTALL_JNBRIDGE=<%= @install_jnbridge %>
+SILENT_INSTALL_ADMIN=<%= @install_admin %>
+SILENT_INSTALL_SOLR=<%= @install_solr %>
+SILENT_INSTALL_PDFG=<%= @install_pdfg %>
+SILENT_INSTALL_FOLDER=<%= @folder %>
+SILENT_ENABLE_PROD_SECURE_PROFILE=<%= @profile == :secure || @profile == :prod %>
+SILENT_ENABLE_PROD_DEFAULT_PROFILE=<%= @profile == :default %>
+SILENT_ENABLE_DEV_PROFILE=<%= @profile == :dev %>
+SILENT_ADMIN_IP=<%= @admin_ip %>
+SILENT_ADMIN_USERNAME=<%= @admin_username %>
+SILENT_ADMIN_PASSWORD=<%= @admin_password %>
+SILENT_ENABLE_RDS=<%= @enable_rds %>
+SILENT_RDS_PASSWORD=<%= @rds_password %>
+SILENT_JETTY_IP=<%= @jetty_ip %>
+SILENT_JETTY_USERNAME=<%= @jetty_username %>
+SILENT_JETTY_PASSWORD=<%= @jetty_password %>
+SILENT_CONTEXT_ROOT=<%= @j2ee_context_root %>
+SILENT_AUTO_ENABLE_UPDATES=<%= @auto_update %>
+SILENT_MIGRATE_COLDFUSION=<%= @migrate %>
+SILENT_PREV_CF_MIGR_DIR=<%= @prev_cf_dir %>
+ENABLE_RDS=<%= @enable_rds %>
+ENABLE_WSRP=<%= @enable_wsrp %>
+ENABLE_JSDEBUG=<%= @enable_jsdebug %>
+ENABLE_CFR=<%= @enable_cfr %>
+ENABLE_CFSWF=<%= @enable_cfswf %>
+ENABLE_CFFORMS=<%= @enable_cfforms %>

@@ -1,0 +1,4 @@
+mssql-server	sqlagent/enable	boolean	false
+mssql-server	sqlagent/setEnable	boolean	false
+mssql-tools	mssql-tools/accept_eula	boolean	Y
+msodbcsql17	msodbcsql/accept_eula	boolean	Y

@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'headless'
+require 'capybara-webkit'
+require 'capybara/dsl'
+require 'rack/app'
+
+class App < Rack::App
+  desc 'some hello endpoint'
+  get '/' do
+    'Hello World!'
+  end
+end
+
+Capybara.current_driver = :webkit
+Capybara.javascript_driver = :webkit
+Capybara.app = App
+
+class Test
+  include Capybara::DSL
+
+  def initialize url
+    visit url
+  end
+
+  def html
+    page.html
+  end
+
+  def text
+    page.text
+  end
+
+end
+
+Headless.ly do 
+  puts 'visit /'
+  test = Test.new('/')
+  puts test.text
+end
+
