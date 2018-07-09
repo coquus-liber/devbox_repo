@@ -125,3 +125,4 @@ nodes
 #
 .*.sw*
 
+.vagrant
