@@ -55,6 +55,9 @@ Vagrant.configure("2") do |config|
       chef.validation_key_path = ENV['chef_validation_key_path']
       chef.validation_client_name = ENV['chef_validation_client_name']
     when 'chef_zero'
+      %w(cookbooks data_bags nodes roles).each do |folder|
+        mkpath folder
+      end
       chef.cookbooks_path = "cookbooks"
       chef.data_bags_path = "data_bags"
       chef.nodes_path = "nodes"
@@ -62,6 +65,7 @@ Vagrant.configure("2") do |config|
     end
 
     chef.add_recipe "box"
+    chef.add_recipe "rvm"
   end
 
 end
