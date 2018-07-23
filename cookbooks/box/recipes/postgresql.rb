@@ -18,5 +18,3 @@ postgresql_database 'vagrant' do
   not_if "psql vagrant -c \"\"", user: 'vagrant'
 end
 
-package 'libpq-dev'
-

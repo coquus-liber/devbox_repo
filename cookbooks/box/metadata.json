@@ -10,7 +10,9 @@
   "dependencies": {
     "ubuntu": "~> 2.0.1",
     "java": "~> 2.1.0",
-    "postgresql": "~> 7.0.0"
+    "git": "~> 9.0.1",
+    "postgresql": "~> 7.0.0",
+    "nodejs": "~> 5.0.0"
   },
   "recommendations": {
   },

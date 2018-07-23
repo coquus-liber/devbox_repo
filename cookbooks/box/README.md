@@ -32,7 +32,7 @@
   * [x] java ( system openjdk-8-jdk )
   * [x] mailcatcher
   * [x] redis
-  * [ ] git-prompt
+  * [x] git-prompt
 
 * Terminal Editors
   * [x] vim
@@ -43,22 +43,22 @@
 * [ ] lightdm autologin
 * [ ] keychain without pass
 
-* [ ] terminal
-  * [ ] gnome-terminal
-  * [ ] terminator
+* [x] terminal
+  * [x] gnome-terminal
+  * [x] terminator
 
-* [ ] apt
-  * [ ] xubuntu-core
+* [x] apt
+  * [x] xubuntu-core
 
 * [ ] X-windows Editors
-  * [ ] gvim
+  * [x] gvim
   * [ ] atom
   * [ ] sublime
 
 * [ ] browsers
-  * [ ] firefox
+  * [x] firefox
   * [ ] chrome
-  * [ ] chromium
+  * [x] chromium
 
 ## Development
 
@@ -73,7 +73,7 @@
   * [ ] bundler
   * [ ] rails
     * [ ] secret key base
-* [ ] postgresql
+* [x] postgresql
 
 ### NodeJS 
 
@@ -90,16 +90,16 @@
 
 ### Automated Testing
 
-* [ ] rspec
-* [ ] xvfb # headless windows
-* [ ] Capybara
-* [ ] webdriver
-  * [ ] webkit
-  * [ ] chromedriver
+* [x] rspec
+* [x] xvfb # headless windows
+* [x] Capybara
+* [x] webdriver
+  * [x] webkit
+  * [x] chromedriver
 
 ## requirements for being inside a firewall
 
-* [ ] proxy configuration
+* [x] proxy configuration
 * [ ] package cache configuration
   * [ ] gem
   * [ ] npm / yarn
