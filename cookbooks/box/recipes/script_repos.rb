@@ -16,4 +16,3 @@ git '/opt/box/install' do
   group 'vagrant'
 end
 
-

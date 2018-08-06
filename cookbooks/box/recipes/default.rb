@@ -13,9 +13,9 @@ include_recipe 'box::postgresql'
 include_recipe 'box::git'
 include_recipe 'box::gems'
 include_recipe "box::nodejs"
+include_recipe 'box::script_repos'
 
-#include_recipe 'box::script_repos'
-#include_recipe 'box::rvm'
+# include_recipe 'rvm'
 
 #include_recipe 'box::webkit'
 #include_recipe 'java::default'

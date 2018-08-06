@@ -51,7 +51,6 @@ box[:packages] = %w(
   ruby-redis
   sqlite3
   libsqlite3-dev
-  node-sqlite3
   ruby-sqlite3
 )
 
@@ -62,6 +61,7 @@ box[:gems] = %w(
   rack-app
   puma
   pg
+  sqlite3
   mailcatcher
 )
 

@@ -1,0 +1,4 @@
+sudo apt-get install gcc make perl
+cd /media/$USER/<...>
+sudo ./VBoxLinuxAdditions.run
+sudo reboot

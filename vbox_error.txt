@@ -1,0 +1,3 @@
+VBoxClient: VBoxClient (seamless): failed to start.  
+Stage: Setting guest IRQ filter mask  Error: VERR_INTERNAL_ERROR
+
