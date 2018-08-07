@@ -15,6 +15,7 @@ end
 # create default database for the 'vagrant' user
 postgresql_database 'vagrant' do
   owner 'vagrant'
+  template 'template0'
   not_if "psql vagrant -c \"\"", user: 'vagrant'
 end
 
