@@ -12,13 +12,13 @@ group 'nopasswdlogin' do
 end
 
 directory "/home/vagrant" do
-  user 'vagrant'
+  owner 'vagrant'
   group 'vagrant'
   mode '0700'
 end
 
 directory "/home/vagrant/.ssh" do
-  user 'vagrant'
+  owner 'vagrant'
   group 'vagrant'
   mode '0700'
 end
@@ -36,48 +36,51 @@ file "/etc/lightdm/lightdm.conf.d/50-myconfig.conf" do
   content <<~CONF
     [SeatDefaults]
     autologin-user=vagrant
-    AUTOLOGIN
+    allow-guest=false
+    greeter-wrapper=
+    guest-wrapper=
+    greeter-session=
   CONF
 end
 
 directory "/home/vagrant/.config/terminator" do
   recursive true
-  user 'vagrant'
+  owner 'vagrant'
   group 'vagrant'
   mode '0700'
 end
 
 cookbook_file "/home/vagrant/.config/terminator/config" do
   source 'terminator_config'
-  user 'vagrant'
+  owner 'vagrant'
   group 'vagrant'
   mode '0700'
 end
 
 directory "/home/vagrant/.config/xfce4/terminal" do
   recursive true
-  user 'vagrant'
+  owner 'vagrant'
   group 'vagrant'
   mode '0700'
 end
 
 cookbook_file "/home/vagrant/.config/xfce4/terminal/terminalrc" do
   source 'xfce_terminalrc'
-  user 'vagrant'
+  owner 'vagrant'
   group 'vagrant'
   mode '0700'
 end
 
 directory "/home/vagrant/.config/xfce4/panel" do
   recursive true
-  user 'vagrant'
+  owner 'vagrant'
   group 'vagrant'
   mode '0700'
 end
 
 cookbook_file "/home/vagrant/.config/xfce4/panel/whiskermenu-1.rc" do
   source 'whiskermenu.rc'
-  user 'vagrant'
+  owner 'vagrant'
   group 'vagrant'
   mode '0700'
 end
