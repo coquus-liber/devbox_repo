@@ -1,0 +1,44 @@
+{
+  "name": "commandbox",
+  "description": "Installs/Configures commandbox",
+  "long_description": "Installs/Configures commandbox",
+  "maintainer": "The Authors",
+  "maintainer_email": "you@example.com",
+  "license": "All Rights Reserved",
+  "platforms": {
+  },
+  "dependencies": {
+    "java": "~> 2.1.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.1.0",
+  "source_url": "https://github.com/coquus-liber/commandbox",
+  "issues_url": "https://github.com/coquus-liber/commandbox/issues",
+  "privacy": false,
+  "chef_versions": [
+    [
+      ">= 12.14"
+    ]
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ]
+}

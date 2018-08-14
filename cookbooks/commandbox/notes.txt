@@ -1,0 +1,46 @@
+gpg --keyserver keys.gnupg.net --recv-key 6DA70622
+gpg -a --export 6DA70622 | sudo apt-key add -
+
+echo "deb http://downloads.ortussolutions.com/debs/noarch /" | sudo tee -a /etc/apt/sources.list.d/commandbox.list
+echo "deb http://integration.stg.ortussolutions.com/artifacts/debs/noarch /" | sudo tee -a /etc/apt/sources.list.d/commandbox.list
+
+sudo apt-get update && sudo apt-get install commandbox
+
+
+
+if [ ! -f ortus_signing_key.gpg ]
+then
+  gpg --keyserver keys.gnupg.net --recv-key 6DA70622
+  # gpg -a --export 6DA70622 > ortus_signing_key.txt
+  gpg --export 6DA70622 > ortus_signing_key.gpg
+fi
+sudo apt-key add ortus_signing_key.gpg
+
+if [ ! -f /etc/apt/sources.list.d/commandbox.list ]
+then
+  echo "deb http://downloads.ortussolutions.com/debs/noarch /" | sudo tee -a /etc/apt/sources.list.d/commandbox.list
+fi
+
+sudo apt-get -y update
+sudo apt-get -y install commandbox
+
+box version
+
+cd ~/
+
+## 
+# box <<INSTALL_PACKAGES
+# install cfconfig-services
+# install lucee-password-util
+# install adobe-password-util
+# install propertyFile
+# install semver
+# INSTALL_PACKAGES
+
+commandbox-cfconfig git@github.com:Ortus-Solutions/commandbox-cfconfig.git
+
+cfconfig-services https://github.com/Ortus-Solutions/cfconfig.git
+lucee-password-util https://github.com/bdw429s/lucee-password-util.git
+adobe-password-util https://github.com/bdw429s/adobe-password-util.git
+propertyFile https://github.com/bdw429s/PropertyFile.git
+semver https://github.com/Ortus-Solutions/semanticVersion.git

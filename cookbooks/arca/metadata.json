@@ -1,0 +1,45 @@
+{
+  "name": "arca",
+  "description": "Installs/Configures arca",
+  "long_description": "Installs/Configures arca",
+  "maintainer": "The Authors",
+  "maintainer_email": "you@example.com",
+  "license": "All Rights Reserved",
+  "platforms": {
+  },
+  "dependencies": {
+    "ubuntu": "~> 2.0.1",
+    "packagecloud": "~> 1.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.1.0",
+  "source_url": "https://github.com/coquus-liber/arca",
+  "issues_url": "https://github.com/coquus-liber/arca/issues",
+  "privacy": false,
+  "chef_versions": [
+    [
+      ">= 12.14"
+    ]
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ]
+}

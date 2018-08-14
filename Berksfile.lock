@@ -1,23 +1,56 @@
 DEPENDENCIES
+  arca
+    git: https://github.com/coquus-liber/arca.git
+    revision: c6753dfe4de3ad97d1e581c7b32e553a12edce12
+  box
+    git: https://github.com/coquus-liber/box.git
+    revision: f8c7f35183cab71868330e29fc65ae5ce21229a6
+  commandbox
+    git: https://github.com/coquus-liber/commandbox.git
+    revision: 41d2bc83927389d364f01d64a3284359d8344b83
   java (~> 2.1.0)
   postgresql (~> 7.0.0)
+  rvm
+    git: https://github.com/coquus-liber/rvm.git
+    revision: 56f4ba232336c6bb9ab7544ef7ed29636e40fdd7
   ubuntu (~> 2.0.1)
 
 GRAPH
   apt (7.0.0)
+  arca (0.1.0)
+    packagecloud (~> 1.0.0)
+    ubuntu (~> 2.0.1)
+  ark (4.0.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  box (0.1.0)
+    git (~> 9.0.1)
+    java (~> 2.1.0)
+    nodejs (~> 5.0.0)
+    postgresql (~> 7.0.0)
+    ubuntu (~> 2.0.1)
   build-essential (8.1.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
+  commandbox (0.1.0)
+    java (~> 2.1.0)
+  git (9.0.1)
+    build-essential (>= 5.0.0)
   homebrew (5.0.4)
   java (2.1.0)
     homebrew (>= 0.0.0)
     windows (>= 0.0.0)
   mingw (2.0.2)
     seven_zip (>= 0.0.0)
+  nodejs (5.0.0)
+    ark (>= 2.0.2)
+    build-essential (>= 0.0.0)
   openssl (8.1.2)
+  packagecloud (1.0.0)
   postgresql (7.0.0)
     build-essential (>= 2.0.0)
     openssl (>= 4.0)
+  rvm (0.1.1)
   seven_zip (3.0.0)
     windows (>= 0.0.0)
   ubuntu (2.0.1)
